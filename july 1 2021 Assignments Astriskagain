@@ -1,27 +1,28 @@
 import java.util.Scanner;
-class Astriskagain
+class AstriskAgaain
 {
-public static void main(String args[]) 
+public static void main(String args[])
 {
 int rows;
-Scanner sc= new Scanner(System.in);
-System.out.print("enter the no.of rows");
-rows=sc.nextInt();
 int i,j;
-for( i=0; i<=rows; i++) 
+Scanner sc = new Scanner(System.in);
+System.out.println("Enter the number of rows ");
+rows = sc.nextInt();        
+for (i= 0; i<= rows-1 ; i++)
 {
-for(j= 1; j<= i;j++) 
+for (j=0; j<=i; j++)
+{ 
+System.out.print(" * "); 
+} 
+System.out.println();
+} 
+for(i=rows-1; i>=0; i--)
+{
+for(j=0; j <= i-1;j++)
 {
 System.out.print(" * ");
 }
 System.out.println();
 }
-
-for( i=rows-1; i>=0; i--) 
-{
-for(j= 0; j<=i;j++) 
-{
-System.out.print(" * ");
 }
-System.out.println();
 }
